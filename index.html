@@ -4,45 +4,131 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio Home</title>
+
+  <style>
+
+
+    body{
+      background-color: #FFFFFF;
+      padding: 0;
+      margin: 0;
+    }
+    header{
+      background-color: #162447;
+      padding: 0 40px 0 40px;
+    }
+    td {
+      vertical-align: baseline;
+    }
+    .grid-article {
+      float: left;
+      width: 30%;
+    }
+    .grid-spacer {
+      float: left;
+      width: 5%;
+      min-height: 1px;
+    }
+    .project-image {
+      border: 2px solid #1b1b2f;
+    }
+    #title-header{
+      color: white;
+    }
+    #sub-title-header{
+      color: #162447;
+      text-align: center;
+      padding: 4px 0px;
+      font-size: 3em;
+    }
+    #project-gallery {
+      margin: 20px 40px 20px 40px;
+    }
+    #project-gallery:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .header-table{
+      width: 100%;
+    }
+    nav {
+      float: right;
+      font-size: 20px;
+    }
+    .nav-link {
+      padding: 0px 10px;
+    }
+    .project-image:hover {
+      border: 2px solid #e43f5a;
+    }
+    a{
+      color: #e43f5a;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
 
 <body>
 <header>
-<h1>Projects</h1>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about-me.html">About Me</a>
-</nav>
+  <table class="header-table">
+    <tr>
+      <td>
+        <h1 id="title-header">Robel Paguio</h1>
+      </td>
+      <td>
+        <nav>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about-me.html">About Me</a>
+        </nav>
+      </td>
+    </tr>
+</table>
 </header>
-<br><br>
 
-<article>
+
+<h1 id="sub-title-header">Portfolio</h1>
+
+
+
+<section id="project-gallery">
+<article class="grid-article">
+  <a href="https://github.com/robelpaguio/semantic-elements">
+  <img class="project-image" src="images/assignment-1.png" width="100%" alt="Screenshot of assignment 1"></a>
 <h2><a href="https://github.com/robelpaguio/semantic-elements">Assignment 1</a></h2>
 <h3>Semantic Elements</h3>
-<a href="https://github.com/robelpaguio/semantic-elements">
-<img src="images/assignment-1.png" width="300" alt="Screenshot of assignment 1"></a>
 <p>The objective of the assignment was to create a webpage with <em>at least</em> 15 <strong>semantic html elements</strong></p>
 </article>
-<br><br>
 
-<article>
+<article class="grid-spacer">
+
+</article>
+
+<article class="grid-article">
+  <a href="#">
+  <img class="project-image" src="images/web-placeholder.png" width="100%" alt="Screenshot of assignment"></a>
 <h2><a href="#">Assignment #</a></h2>
 <h3>Project TBD</h3>
-<a href="#">
-<img src="images/web-placeholder.png" width="300" alt="Screenshot of assignment"></a>
 <p>Project description TBD</p>
 </article>
-<br><br>
 
-<article>
+<article class="grid-spacer">
+
+</article>
+
+<article class="grid-article">
+  <a href="#">
+  <img class="project-image" src="images/web-placeholder.png" width="100%" alt="Screenshot of assignment"></a>
 <h2><a href="#">Assignment #</a></h2>
 <h3>Project TBD</h3>
-<a href="#">
-<img src="images/web-placeholder.png" width="300" alt="Screenshot of assignment"></a>
 <p>Project description TBD</p>
 </article>
+</section>
 <br><br>
-
 <footer>
 <strong>Updated:</strong> May 4, 2020
 </footer>
