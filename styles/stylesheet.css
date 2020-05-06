@@ -43,6 +43,10 @@ p {
 }
 .project-image {
   border: 2px solid #1b1b2f;
+  width: 100%;
+}
+#about-me-image {
+  width: 100%;
 }
 #title-header{
   color: white;
