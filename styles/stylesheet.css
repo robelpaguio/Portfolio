@@ -62,6 +62,12 @@ p {
 #about-me-image {
   width: 100%;
 }
+
+#about-me-image:hover {
+  transform: scale(1.05);
+  border: 10px solid white;
+  transition: all .5s ease-out;
+}
 #title-header{
   color: white;
 }
@@ -91,6 +97,8 @@ nav {
 }
 .project-image:hover {
   border: 3px solid #e43f5a;
+  transform: scale(1.1);
+  transition: all .5s ease-out;
 }
 a{
   color: #e43f5a;
@@ -98,4 +106,8 @@ a{
 }
 a:hover{
   text-decoration: underline;
+}
+.about-me-grid p:nth-child(1){
+  font-size: 150%;
+  font-weight: 500;
 }
