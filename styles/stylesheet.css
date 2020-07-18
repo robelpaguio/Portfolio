@@ -24,8 +24,41 @@ footer {
 td {
   vertical-align: baseline;
 }
+
 p {
   line-height: 1.5;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size:100%;
+  box-sizing: border-box;
+  display: block;
+  margin: .5rem;
+}
+label {
+  font-weight: bold;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=text]:focus, textarea:focus ,input[type=email]:focus {
+  border: 3px solid #555;
+}
+input[type=submit]:hover {
+  background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+}
+.main {
+  padding-bottom: 100px;
 }
 .gallery-row {
   height: 400px;
@@ -40,7 +73,6 @@ p {
   width: 400px;
   margin: 20px;
 }
-
 
 .grid-article {
   float: left;
@@ -59,8 +91,12 @@ p {
   border: 2px solid #1b1b2f;
   width: 100%;
 }
+.contact-section{
+margin: 20px 40px 20px 40px;
+}
+}
 #about-me-image {
-  width: 100%;
+  width: 200px;
 }
 
 #about-me-image:hover {
@@ -106,8 +142,4 @@ a{
 }
 a:hover{
   text-decoration: underline;
-}
-.about-me-grid p:nth-child(1){
-  font-size: 150%;
-  font-weight: 500;
 }
